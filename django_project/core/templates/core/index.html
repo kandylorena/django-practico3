@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio | Django Práctico 3{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 text-center">
+        <h1 class="display-4">Bienvenido a Django Práctico 3</h1>
+        <p class="lead mt-3">
+            Este proyecto demuestra el uso de plantillas con herencia,
+            formularios con validación backend, y el patrón MTV en Django 6.
+        </p>
+        <hr class="my-4">
+        <p>Explora las secciones usando el navbar superior.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'contacto' %}" role="button">Ir al formulario de contacto</a>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">DRY</h5>
+                <p class="card-text">Principio <em>Don't Repeat Yourself</em> aplicado con herencia de plantillas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">MTV</h5>
+                <p class="card-text">Patrón Model-Template-View respetando la separación de responsabilidades.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Validación Backend</h5>
+                <p class="card-text">Formulario con validación del lado del servidor usando Django Forms.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
