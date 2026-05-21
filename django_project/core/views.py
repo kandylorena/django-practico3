@@ -19,3 +19,12 @@ def contacto(request):
         else:
             context['form'] = form
     return render(request, 'core/contacto.html', context)
+
+
+
+def acerca(request):
+    return render(request, 'core/acerca.html')
+
+
+def servicios(request):
+    return render(request, 'core/servicios.html')

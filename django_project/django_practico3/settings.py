@@ -25,7 +25,22 @@ SECRET_KEY = "django-insecure-j&gfmh^f0whtmcxzwlvip0u&2=40hdpb2405!!m%jj*vm$w0mk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#con esto funciona correcto desde codespace
+# Permite que Django responda desde los dominios de GitHub Codespaces y locales
+ALLOWED_HOSTS = [
+    '.githubdev.com',
+    '.preview.app.github.dev',
+    'localhost',
+    '127.0.0.1',
+]
+
+# ¡Esto soluciona el error 403 Forbidden! Registra los orígenes seguros.
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.githubdev.com',
+    'https://*.preview.app.github.dev',
+    'http://localhost:8000',
+    'https://localhost:8000',
+]
 
 
 # Application definition

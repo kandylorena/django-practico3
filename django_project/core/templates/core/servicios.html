@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios | Django Práctico 3{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Nuestros Servicios</h1>
+        <p class="lead">Ofrecemos soluciones web modernas con Django.</p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Desarrollo Web</h5>
+                <p class="card-text">Creamos aplicaciones web robustas y escalables.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">APIs REST</h5>
+                <p class="card-text">Diseñamos APIs eficientes con Django REST Framework.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Consultoría</h5>
+                <p class="card-text">Asesoramos en arquitectura y buenas prácticas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
